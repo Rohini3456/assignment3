@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+
+a {
+
+    color: #566270;
+}
+
+.current {
+    color: #1F2124;
+    
+    padding-bottom: 3px;
+    
+}
+
+body {
+    height: 200vh;
+    width: 100%;
+    background: #FFFFF3;
+}
+
+
+
+
+@media (min-width: 600px) {
+    html,
+    body{ 
+        height: 250vh;
+    }
+}
+
+
+
+
+/* head-container */
+
+.head-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+}
+
+
+.logo-png {
+    height: 50px;
+    width: auto;
+    margin-left: 40px;
+}
+
+
+.head-container ul {
+    display: inline-flex;
+}
+
+.head-container ul li a {
+    margin-left: 35px;
+    margin-right: 50px;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
+    transition: 0.3s;
+    font-size: large;
+}
+
+.head-container ul li a:hover {
+    border-color: black;
+    transition: 0.3s;
+}
+
+
+@media (max-width: 900px) {
+    .head-container {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: -20px;
+    }
+
+    .head-container ul {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+    }
+
+    .head-btn {
+        
+      display: none;  
+    
+    }
+
+
+    .head-container ul li a:hover {
+        border-color: black;
+        transition: 0.3s;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+.head-container .head-btn {
+    margin-right: 40px;
+}
+
+.head-btn-style {
+    padding: 14px 17px 14px 17px;
+    border: 1px solid transparent;
+    outline: none;
+    background: #FFD8DB;
+    border-radius: 29px;
+    cursor: pointer;
+}
+
+.head-btn-style:hover {
+    background: transparent;
+    border-color: black;
+    transition: 0.4s;
+}
+
+
+
+
+/* head-container ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body-blocks */
+
+
+
+.body-blocks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.body-block1 {
+    height: 90vh;
+    width: 48%;
+}
+
+.body-block1 .main-text {
+    font-size: 80px;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.body-block1 p {
+    padding-top: 40px;
+    padding-left: 105px;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.body-block1 .btn-bar {
+    margin-left: 140px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.bnnr-btn {
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background: #6C49B8;
+    color: aliceblue;
+    border-radius: 20px;
+}
+
+.bnnr-btn:hover {
+    background: transparent;
+    border-color: #6C49B8;
+    color: #6C49B8;
+    transition: 0.4s;
+}
+
+
+
+
+
+.bnnr-arrow {
+    height: 40px;
+    box-shadow: 0 0 6px gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bnnr-arrow:hover {
+    box-shadow: 0 0 6px #D81159,
+        0 0 30px #D81159;
+    transition: 0.4s;
+}
+
+
+
+
+
+
+
+.body-block2 {
+    height: 90vh;
+    width: 48%;
+    padding-top: 90px;
+}
+
+.land-img {
+    height: 550px;
+    width: auto;
+}
+
+
+
+
+@media (max-width: 900px) {
+    .body-blocks .body-block1 {
+        display: block;
+        position: absolute;
+        margin-top: 110vh;
+    }
+
+
+    .body-block1 .main-text {
+        font-size: 60px;
+        padding-left: 0px;
+        padding-top: 100px;
+    }
+
+
+    .body-block1 p {
+        padding-top: 40px;
+        line-height: 30px;
+        padding-left: 0px;
+    }
+
+
+    .body-block1 .btn-bar {
+        margin-left: 0px;
+        margin-top: 70px;
+        
+    }
+
+
+
+
+
+    .body-blocks .body-block2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .body-blocks .body-block2 img {
+        height: 300px;
+        width: auto;
+        margin-top: 20px;
+    }
+
+
+}
+
+
+
+/* body-blocks ends */
+
+
+
+
+
+
+
+/* 2nd boxes */
+
+
+/* .sec-box {
+    /* margin-top: -100px; }
+    */
+
+
+.box {
+    height: 80px;
+    width: 700px;
+    margin-bottom: 5px;
+    margin-left: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:linen;
+    border-radius: 35px; 
+    
+}
+
+.box span {
+    color: #566270;
+}
+
+
+.colo{
+
+    width: 30px;
+    height: 12px;
+    border-radius: 45px;
+}
+
+.fs-box
+.th-box 
+.fr-box {
+    background: rgba(250, 220, 220, 0.33);
+    border-radius: 60px;
+    cursor: pointer;
+    position: absolute;
+    width: 130px height;
+    
+    
+}
+.tic{
+    width: 31px;
+    height: 31px;
+    background:url(https://www.linkpicture.com/q/tick-grey.png) no-repeat;
+    
+}
+/*.tic:hover{
+    background: url(https://www.linkpicture.com/q/tick-blue.png) no repeat;
+}*/
+.fs-box:hover .tic{
+    background: url(https://www.linkpicture.com/q/tick-blue.png) no-repeat;
+
+}
+.fs-box:hover{
+    background-color: white;
+    box-shadow: 0px 0px 15px #000;
+}
+
+.th-box:hover .tic{
+    background: url(https://www.linkpicture.com/q/tick-blue.png) no repeat;
+}
+.th-box:hover{
+    background-color: white;
+    box-shadow: 0px 0px 15px #000;
+}
+
+
+    .sec-box .box:hover .tic{
+        background: url(https://www.linkpicture.com/q/tick-blue.png) no-repeat;
+    
+    }
+    .sec-box .box:hover{
+        background-color: white;
+        box-shadow: 0px 0px 15px #000;
+    }
+    
+
+
+
+.se-box {
+    background: #FFD8DB;
+    box-shadow: 0 0 10px #6C49B8;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+
+    .sec-box {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 700px;
+        margin-left: 100px;
+        cursor: pointer;
+        
+        
+
+    }
+
+    .sec-box .box {
+        margin-left: 50px;
+        
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    html,
+    body{
+        display: none;
+        height: 300vh;
+    }
+}
+
